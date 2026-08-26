@@ -127,7 +127,8 @@ function acknowledgeDisclaimer(): void {
       <Transition name="social-fab-panel">
         <div v-if="isSocialFabOpen" class="social-fab__panel" aria-label="Redes sociales">
           <a class="social-fab__link" href="mailto:cesarsobworkspace@gmail.com" aria-label="Enviar email">
-            <v-icon icon="mdi-email-outline" size="20" />
+            <v-icon icon="mdi-email-outline" size="18" />
+            <span>Correo</span>
           </a>
           <a
             class="social-fab__link"
@@ -136,16 +137,18 @@ function acknowledgeDisclaimer(): void {
             rel="noopener noreferrer"
             aria-label="Abrir LinkedIn"
           >
-            <v-icon icon="mdi-linkedin" size="20" />
+            <v-icon icon="mdi-linkedin" size="18" />
+            <span>LinkedIn</span>
           </a>
           <a
             class="social-fab__link"
-            href="https://github.com/Zetasab/Vue-Zocorn-Fe"
+            href="https://github.com/Zetasab/Zocorn"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Abrir GitHub"
           >
-            <v-icon icon="mdi-github" size="20" />
+            <v-icon icon="mdi-github" size="18" />
+            <span>GitHub</span>
           </a>
         </div>
       </Transition>
@@ -193,7 +196,7 @@ function acknowledgeDisclaimer(): void {
             </a>
             <a
               class="disclaimer-dialog__link"
-              href="https://github.com/Zetasab/Vue-Zocorn-Fe"
+              href="https://github.com/Zetasab/Zocorn"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Abrir GitHub"
@@ -337,24 +340,30 @@ function acknowledgeDisclaimer(): void {
 
 .social-fab__panel {
   display: flex;
-  align-items: center;
-  gap: 0.55rem;
-  padding: 0.5rem;
-  border-radius: 999px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5rem;
+  padding: 0.6rem;
+  border-radius: 1rem;
   background: rgba(8, 23, 45, 0.92);
   border: 1px solid rgba(148, 163, 184, 0.35);
   box-shadow: 0 10px 30px rgba(2, 6, 23, 0.35);
 }
 
 .social-fab__link {
-  width: 2.2rem;
-  height: 2.2rem;
+  height: 2.4rem;
+  padding: 0 0.9rem;
   border-radius: 999px;
   color: #dbeafe;
   background: rgba(37, 99, 235, 0.2);
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.55rem;
   text-decoration: none;
+  font-size: 0.86rem;
+  font-weight: 500;
+  white-space: nowrap;
   transition: background-color 160ms ease, transform 160ms ease;
 }
 
