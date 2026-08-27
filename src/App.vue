@@ -126,7 +126,7 @@ function acknowledgeDisclaimer(): void {
     <div v-if="showSocialFab" class="social-fab">
       <Transition name="social-fab-panel">
         <div v-if="isSocialFabOpen" class="social-fab__panel" aria-label="Redes sociales">
-          <a class="social-fab__link" href="mailto:cesarsobworkspace@gmail.com" aria-label="Enviar email">
+          <a class="social-fab__link" href="mailto:cesarsobrinoarribas@gmail.com" aria-label="Enviar email">
             <v-icon icon="mdi-email-outline" size="18" />
             <span>Correo</span>
           </a>
