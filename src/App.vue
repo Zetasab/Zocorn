@@ -150,6 +150,10 @@ function acknowledgeDisclaimer(): void {
             <v-icon icon="mdi-github" size="18" />
             <span>GitHub</span>
           </a>
+          <router-link class="social-fab__link" to="/politica-privacidad-condiciones-uso" aria-label="Política de privacidad">
+            <v-icon icon="mdi-shield-lock-outline" size="18" />
+            <span>Privacidad</span>
+          </router-link>
         </div>
       </Transition>
 
